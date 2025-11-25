@@ -2,98 +2,16 @@
 <html>
 <head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QDQDBBZDJM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-QDQDBBZDJM');
-  </script>
-  <title>PeriFerry e-learning login</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex; 
-      height: 100vh; 
-      justify-content: center; 
-      align-items: center; 
-      background: #f0f0f0;
-      margin: 0;
-    }
-    #loginBox {
-      background: white;
-      padding: 2em;
-      border-radius: 5px;
-      box-shadow: 0 0 10px #aaa;
-      width: 300px;
-      text-align: center;
-    }
-    h2 {
-      color: #003377;
-      margin-bottom: 1em;
-    }
-    input[type="email"], input[type="password"] {
-      width: 90%;
-      padding: 8px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      font-size: 1em;
-    }
-    button {
-      padding: 10px 20px;
-      margin-top: 10px;
-      background: #003377;
-      border: none;
-      color: white;
-      font-size: 1em;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #0055aa;
-    }
-    #errorMsg {
-      color: red;
-      margin-top: 10px;
-      height: 1.2em;
-    }
-  </style>
+  <!-- hi -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QDQDBBZDJM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QDQDBBZDJM');
+</script>
+  <meta http-equiv="refresh" content="0; URL='res/index.html'" />
 </head>
-<body>
-  <div id="loginBox">
-    <h2>PeriFerry e-learning login</h2>
-    <input type="email" id="email" placeholder="Email" required />
-    <input type="password" id="password" placeholder="Password" required />
-    <br/>
-    <button onclick="handleLogin()">Login</button>
-    <div id="errorMsg"></div>
-  </div>
-  
-  <script>
-    // Define allowed credentials
-    const credentials = {
-      "prabhu.prakash@sutherlandglobal.com": "prabhu@periferry",
-      "zeenamariam.zacharia@sutherlandglobal.com": "zeena@periferry",
-      "lalita.rawat@sutherlandglobal.com": "lalita@periferry",
-      "maninder.singh@sutherlandglobal.com": "mainder@periferry",
-      "shabina.choudhary@sutherlandglobal.com": "shabina@periferry",
-      "support@periferry.com": "pfsupport",
-      "guest": "guest"
-    };
-
-    function handleLogin() {
-      const email = document.getElementById('email').value.trim().toLowerCase();
-      const password = document.getElementById('password').value;
-
-      // Check if email exists and password matches
-      if (credentials[email] && credentials[email] === password) {
-        document.getElementById('errorMsg').textContent = "";
-        window.location.href = "res/index.html";
-      } else {
-        document.getElementById('errorMsg').textContent = "Invalid email or password.";
-      }
-    }
-  </script>
-</body>
+<body></body>
 </html>
